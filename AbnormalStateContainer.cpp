@@ -7,7 +7,7 @@ void __thiscall AbnormalStateContainer::AbstateListInObject::AbstateListInObject
   int innerIndex; // eax
   signed int outerIndex; // ecx
 
-  this->asl_Element = std::vector<AbnormalStateContainer::AbstateElementInObject> (0x1C);
+  this->asl_Element = new AbnormalStateContainer::AbstateElementInObject[0x1C);
   listAbstateObject = &this->asl_List;
 
   listAbstateObject->vfptr = &List<AbnormalStateContainer::AbstateElementInObject>::vftable;
